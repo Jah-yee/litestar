@@ -557,6 +557,13 @@ between 1 and 2 should upgrade to Pydantic 2.</p>
 <p>References: </p>
 </div>
 </dd>
+<dt>Add <code class="docutils literal notranslate"><span class="pre">ping_interval</span></code> to <code class="docutils literal notranslate"><span class="pre">ServerSentEvent</span></code> for keepalive pings<a class="headerlink reference internal" href="#3.0.0-add" id="3.0.0-add">#</a></dt><dd><div class="changelog-change docutils container">
+<p>Added optional <code class="docutils literal notranslate"><span class="pre">ping_interval</span></code> parameter to <a class="reference internal" href="../reference/response/index.html#litestar.response.ServerSentEvent" title="litestar.response.ServerSentEvent"><code class="xref py py-class docutils literal notranslate"><span class="pre">ServerSentEvent</span></code></a> that
+sends SSE comment keepalive pings at the specified interval to prevent connection timeouts from reverse proxies
+or clients.</p>
+<p>References: <span><a class="reference external" href="https://github.com/litestar-org/litestar/issues/4082">https://github.com/litestar-org/litestar/issues/4082</a></span>, <span><a class="reference external" href="https://github.com/litestar-org/litestar/pull/4623">https://github.com/litestar-org/litestar/pull/4623</a></span></p>
+</div>
+</dd>
 <dt>Remove logging config and related constructs<a class="headerlink reference internal" href="#3.0.0-remove logging config and related constructs" id="3.0.0-remove logging config and related constructs">#</a><span class="breaking-change">breaking</span></dt><dd><div class="changelog-change docutils container">
 <p>Remove Litestar’s logging configuration, and related modules. In particular,
 the following have been removed:</p>
